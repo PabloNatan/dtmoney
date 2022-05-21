@@ -6,6 +6,11 @@ export const Wrapper = styled.div`
     margin: 0 auto;
     width: 100%;
     padding: ${theme.spacings.small} ${theme.spacings.medium};
+
+    @media screen and (min-width: 768px) {
+      padding: 0;
+      margin-top: ${theme.spacings.small};
+    }
   `}
 `;
 
