@@ -6,6 +6,7 @@ import { theme } from "./styles/theme";
 import { TransactionsTable } from "./components/TransactionsTable";
 import { ITransaction } from "./components/Transaction";
 import { useEffect } from "react";
+import { api } from "./services/api";
 
 const realeases: ITransaction[] = [
   {
@@ -26,8 +27,8 @@ const realeases: ITransaction[] = [
 
 function App() {
   const getTransactions = async () => {
-    const response = await fetch("http://localhost:3000/api/transactions");
-    const data = await response.json();
+    const { data } = await api.get("/transactions");
+
     console.log(data);
   };
 
