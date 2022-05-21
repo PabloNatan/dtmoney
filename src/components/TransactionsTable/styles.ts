@@ -12,7 +12,7 @@ export const Wrapper = styled.div`
 export const Table = styled.table`
   ${({ theme }) => css`
     width: 100%;
-    border-spacing: 0 0.5rem;
+    border-spacing: 0 1rem;
 
     th {
       color: ${theme.colors.text};

@@ -5,7 +5,7 @@ export const Wrapper = styled.tr`
     td {
       padding: 1rem 2rem;
       border: 0;
-      font-size: ${theme.font.sizes.xxxsmall};
+      font-size: ${theme.font.sizes.xxsmall};
       background-color: ${theme.colors.white};
       color: ${theme.colors.text};
       border-radius: 0.25rem;
